@@ -6,11 +6,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width" , initial-scale="1.0">
     <title>My CMP v2 Testpage</title>    
-   
-</head>
-
-<body>
-window.addEventListener("ucEvent", function (e) {    
+   <script>
+       window.addEventListener("ucEvent", function (e) {    
     if( e.detail && e.detail.event == "consent_status") {
         // check for consent status of service "Data Processing Service Test"
         if(e.detail['Data Processing Service Test'] === true) {
@@ -20,8 +17,14 @@ window.addEventListener("ucEvent", function (e) {
           console.log('Data Processing Service Test has no consent');
     
         }
-    }
-});
+     }
+    });
+   </script>
+    
+</head>
+
+<body>
+
 
     <h1>Usercentrics CMP V2 Test Page</h1>
     <br><br>
