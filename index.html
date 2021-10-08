@@ -6,21 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width" , initial-scale="1.0">
     <title>My CMP v2 Testpage</title>    
-   <script>
-       window.addEventListener("ucEvent", function (e) {    
-    if( e.detail && e.detail.event == "consent_status") {
-        // check for consent status of service "Data Processing Service Test"
-        if(e.detail['Data Processing Service Test'] === true) {
-          console.log('Data Processing Service Test has consent');
-        }
-        else {
-          console.log('Data Processing Service Test has no consent');
-    
-        }
-     }
-    });
-   </script>
-    
+ 
 </head>
 
 <body>
@@ -31,7 +17,7 @@
     <p id="element">So far, consent has not been given for the Data Processing Service Test.</p>
     <img src="https://1nf2x118nwr23j3l7o2i40qd-wpengine.netdna-ssl.com/wp-content/uploads/2020/04/190208-UCS-Logo-800px.png" alt="uc-logo">
     <br><br>
-    <p id="myelement1"></p>
+    <p id="myelement1">Let's see if we can get a consent for the Data Processing Service Test</p>
     
 <script type="text/plain" data-usercentrics="Data Processing Service Test">
    document.getElementById("element").innerHTML = "Woohoo! You've just given consent to the Data Processing Service Test!";
